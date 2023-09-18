@@ -1,17 +1,4 @@
-// fake array to begin with
-// let arrayOfTodos = [
-//     {
-//     "userId": 14,
-//     "id": 1,
-//     "title": "delectus aut autem",
-//     "completed": false
-// },
-// {
-//     "userId": 20,
-//     "id": 2,
-//     "title": "something else",
-//     "completed": false
-// }]
+
 
 const fetchTodos = () => {
     fetch('https://jsonplaceholder.typicode.com/todos')
@@ -27,6 +14,19 @@ const logTodos = () => {
 
 let list = document.getElementById("todo-list") 
 
+
+const filterTodos = () => {
+    list.remove()
+    let userId = document.getElementById("userId")
+    const filteredList = arrayOfTodos.filter(index === userId)
+   
+    // for (let i = 0; i < arrayOfTodos.length; i++) {
+    //     let filteredListItem = document.createElement('LI')
+    //     filteredListItem.innerText = arrayOfTodos[i].title
+    //     list.appendChild(filteredListItem)
+    // }
+    
+}
 
 const populateTodos = () => {
     for (let i = 0; i < arrayOfTodos.length; i++) {

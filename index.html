@@ -6,9 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="fetchTodos()">Fetch Todos</button>
+  <input id = userId type="number" min=1 max=10>User ID</input>
+  
+
+  <button onclick="fetchTodos()">Fetch Todos</button>
     <button onclick="logTodos()">Log Todos</button>
+   
     <button onclick="populateTodos()">Populate Todos</button>
+   
+    <button onclick="filterTodos()">Filter by user ID</button>
+
     <ol id="todo-list">
     </ol>
 
