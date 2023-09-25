@@ -6,17 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-  <input id = userId type="number" min=1 max=10>User ID</input>
+ 
+  <button onclick="fetchTodos()">Fetch Todos</button>
+  <button onclick="logTodos()">Log Todos</button>
+  <button onclick="populateTodos()">Populate Todos</button>
+  <button onclick="clearTodos()">Clear All</button>
+  <br/>
+  <br/>
+  <label for="userId">User ID</label>
+  <input id="userId" name="userId" type="number" min="1" max="10"/>
+
+  <button onclick="filterTodosById()">Filter by user ID</button>
+  <br/>
+  <br/>
+  <button onclick="filterByComplete()">Show User's Completed Items</button>
+  <button onclick="filterByIncomplete()">Show Items Not Complete</button>
+  <br/>
+
   
 
-  <button onclick="fetchTodos()">Fetch Todos</button>
-    <button onclick="logTodos()">Log Todos</button>
-   
-    <button onclick="populateTodos()">Populate Todos</button>
-   
-    <button onclick="filterTodos()">Filter by user ID</button>
-
-    <ol id="todo-list">
+  <ol id="todo-list">
     </ol>
 
   <script src="scripts.js"></script>
